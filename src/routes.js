@@ -55,4 +55,9 @@ router.route("/reps")
     }
   });
 
+  router.route("/")
+  .get((req, res) => { 
+    return res.status(200).send("Server is Awake.");
+  });
+
 module.exports = router;
